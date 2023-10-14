@@ -113,10 +113,8 @@ input{
     }
 
     .main{
-        padding-bottom: 120px;
-        border-bottom: 3px solid white;
+        padding-bottom: 90px;
         margin-left: 60px;
         margin-right: 60px;
-        border-bottom: 3px solid white;
     }
 }

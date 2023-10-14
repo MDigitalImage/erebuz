@@ -16,21 +16,21 @@ if (sortTypeValue == "Price"){
 
 let productsHTML = '';
 
-products.forEach((product) => {
-    if((filterTypeValue == product.filterType || filterTypeValue == "All" || filterTypeValue == "New Arrivals" || filterTypeValue == null) && (availability == "true" || product.availability == "true")){
-        productsHTML += `
-    <div class="product-preview js-product-preview" data-this-product-id = "${product.id}">
-        <img class="product-image" src="${product.image}">
-        <p class="product-name">
-            ${product.name}
-        </p>
-        <p class="product-price">
-            &#x20AC; ${(product.priceInCents /100).toFixed(2)}
-        </p>
-    </div>       
-    `;
-    }        
-});
+//products.forEach((product) => {
+//    if((filterTypeValue == product.filterType || filterTypeValue == "All" || filterTypeValue == "New Arrivals" || filterTypeValue == null) && (availability == "true" || product.availability == "true")){
+//        productsHTML += `
+//    <div class="product-preview js-product-preview" data-this-product-id = "${product.id}">
+//        <img class="product-image" src="${product.image}">
+//        <p class="product-name">
+//            ${product.name}
+//        </p>
+//        <p class="product-price">
+//            &#x20AC; ${(product.priceInCents /100).toFixed(2)}
+//        </p>
+//    </div>       
+//    `;
+//    }        
+//});
 
 products.forEach((product) => {
     productsHTML += `
