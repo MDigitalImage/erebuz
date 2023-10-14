@@ -1,0 +1,321 @@
+p{
+    font-family: serif; 
+    letter-spacing: 1px;
+}
+
+a{
+    text-decoration: none; 
+}
+
+.header{
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba( 0,0,0, 0.91);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    right: 0;
+    border-bottom: 1px solid white;
+    z-index: 1;
+}
+
+.logo-icon{
+    margin: auto;
+    height: 60px;
+    width: 60px;
+    cursor: pointer;
+}    
+
+.logo-icon2{
+    height: 75px;
+    width: 75px;
+    cursor: pointer;   
+}
+
+.logo-icon3{
+    height: 180px;
+    width: 180px;
+    cursor: pointer;  
+    margin: auto; 
+    display: inline-block;
+    margin-top: 150px;
+    margin-bottom: 120px;
+    padding-left: 9px;
+}
+
+.middle-section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    min-width: 300px;
+    max-width: 360px;
+}
+
+.header-text{
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    letter-spacing: 0.4px;
+    font-weight: bold;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 0px;   
+    max-width: 340px;
+    min-width: 220px;
+} 
+
+.icon{
+    height: 15px;
+    cursor: pointer;
+}
+
+.right-section{
+    margin-left: 260px; 
+    margin-right: 30px;
+    width: 75px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+}
+
+.bottom{
+    padding-top: 30px;
+    border-top: 1px solid white;
+    width: 100%;
+    margin-bottom: 45px;
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
+    background-color: black;
+}
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 45px;
+    align-items: center;
+    vertical-align: middle;
+}
+
+.newsletter-button{
+    vertical-align: middle;
+    display: inline-block;
+    border: 1px solid white;
+    width: 210px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: black;
+    color: white;
+    margin: auto; 
+    font-size: 13px;
+    display: block;
+    margin-left: 30px;
+    margin-right: 0px; 
+    cursor: pointer; 
+}
+
+.newsletter-button:hover{
+    text-shadow: 0px -0.5px #ffffff;
+    border: 3px solid white;    
+}
+
+.policy{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle;
+    text-align: center; 
+}
+
+.policytext{
+    margin: 15px;
+    color: white;
+    cursor: pointer;
+    display: inline-block;    
+}
+
+.iglogo{
+    display: inline-block;
+    float: right;
+    margin: 15px;
+    margin-right: 30px;
+    margin-left: 0px;
+    height: 22.5px;
+    cursor: pointer;    
+}
+
+.cards{
+    vertical-align: middle;
+    border-top: 1px solid white;
+}
+
+.card-logo{
+    margin: 6px;
+    margin-top: 10px;
+    height: 30px;
+}
+
+
+.logo-icon:hover, .logo-icon2:hover, .header-text:hover,.icon:hover, .iglogo:hover, .logo-icon3:hover{
+    opacity: 0.75;
+}
+
+.bag-div:hover{
+    .icon-bag{
+        opacity: 0.75;
+    }
+}
+
+.policytext:hover{
+    opacity: 0.75;    
+}
+
+.ctext{
+    float: right;
+    margin-right : 30px;
+    color: white;
+    font-size: 14px;
+    display: inline-block; 
+}
+
+.title{
+    color: white;
+    display: block; 
+    margin: auto;
+    text-align: center;
+    font-size: 22.5px;
+    font-weight: bolder;
+}
+
+.arrow2{
+    height: 15px;
+    margin: auto;
+    margin-left: 9px;
+    margin-right: 9px;
+}
+
+.bag-div{
+    position: relative;
+    text-align: right;
+    cursor: pointer;
+}
+
+span{
+    font-size: 11px;
+    background-color: red;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position: absolute;
+    top: -15px;
+    left: 90%;
+    padding: 3px 8px;
+}
+
+@media only screen and (max-width:980px) {
+    span{
+        display: none;
+    }
+
+    .middle-section{
+        display: none;
+    }
+    
+    .header{
+        height: 160px;
+        border-bottom: 3px solid white;
+    }
+
+    .icon{
+        height: 36px;
+    }
+
+    .iglogo{
+        height: 60px;
+    }
+
+    .logo-icon{
+        margin-left: 6px;
+        height: 130px;
+        width: 130px;
+    }
+
+    .logo-icon2{
+        height: 145px;
+        width: 145px;
+    }
+
+    .right-section{
+        margin-left: 215px; 
+        margin-right: 60px;        
+        width: 170px;      
+            
+    }
+
+    .policytext{
+        margin: 30px;
+        font-size: 30px;
+    }
+
+    .card-logo{        
+        height: 60px;
+    }
+
+    .ctext{
+        font-size: 22.5px;
+    }
+
+    .cards{
+        border-top: 3px solid white;
+    }
+
+    .newsletter-button{
+        border: 3px solid white;
+        width: 300px;
+        height: 60px;
+        font-size: 18px;
+        display: block;
+        margin-left: 6px;
+        margin-right: 0px; 
+        cursor: pointer; 
+    }
+    
+    .arrow2{
+        display: none;
+    }
+
+    .bottom{
+        padding-top: 30px;
+        border-top: 3px solid white;       
+    }
+
+    .logo-icon3{
+        padding-left: 27px;
+    }
+    
+    
+}
+
