@@ -133,8 +133,8 @@ body{
 @media only screen and (max-width:980px) {
 
     .product-preview{
-        max-width: 780px;
-        width: 780px;
+        max-width: 810px;
+        width: 810px;
     }
 
     .product-name,.product-price{
