@@ -132,14 +132,15 @@ body{
 @media only screen and (max-width:980px) {
 
     .product-preview{
-        max-width: 750px;
-        width: 750px;
+        max-width: 690px;
+        width: 690px;
         margin-bottom: 90px; 
+        
     }
 
     .product-name,.product-price{
-        font-size: 45px;
-        margin: 30px; 
+        font-size: 30px;
+        margin: 15px; 
         margin-left: 0px;
     }
 
@@ -156,8 +157,8 @@ body{
         font-size: 30px;       
         border: 2px solid white;
         width: 750px;
-        height: 90px;
-        border-radius: 90px; 
+        height: 120px;
+        border-radius: 120px; 
     }
 
     .delete-button{
@@ -178,6 +179,7 @@ body{
 
     .items-text{
         margin: 60px; 
+        margin-bottom: 120px;
         font-size: 45px; 
         font-weight: bolder;          
     }
