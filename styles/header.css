@@ -40,8 +40,8 @@ a{
     cursor: pointer;  
     margin: auto; 
     display: inline-block;
-    margin-top: 90px;
-    margin-bottom: 105px;
+    margin-top: 150px;
+    margin-bottom: 120px;
     padding-left: 12px;
 }
 
@@ -266,10 +266,11 @@ span{
     .logo-icon2{
         height: 145px;
         width: 145px;
+        margin: 30px;
     }
 
     .logo-icon3{
-        margin-top: 630px;
+        margin-top: 450px;
     }
 
     .right-section{
