@@ -34,7 +34,7 @@ let productsHTML = '';
 
 products.forEach((product) => {
     productsHTML += `
-    <div class="product-preview js-product-preview" data-this-product-id = "${product.id}">
+    <div class="product-preview js-product-preview " data-this-product-id = "${product.id}">
         <img class="product-image" src="${product.image}">
         <p class="product-name">
             ${product.name}

@@ -156,6 +156,10 @@ body{
         margin: 30px; 
         margin-left: 0px;
     }
+
+    .product-image{
+        width: 60%;
+    }
     
     .center{
         margin-top: 0px;

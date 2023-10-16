@@ -225,6 +225,31 @@ body{
     font-size: 30px;
 }
 
+
+.hidden{
+    opacity: 0.2;
+    filter: blur(0.1rem);
+}
+
+.show{
+    opacity: 1;
+    filter: blur(0rem);
+    transition: all 1s;
+}
+
+.hidden2{
+    opacity: 0.2;
+    filter: blur(0.1rem);
+    transform: translateX(+8%);
+}
+
+.show2{
+    opacity: 1;
+    filter: blur(0rem);
+    transform: translateX(0);
+    transition: all 1s;
+}
+
 @media only screen and (max-width:1300px) {
     .products{
         grid-template-columns: 1fr 1fr ;
