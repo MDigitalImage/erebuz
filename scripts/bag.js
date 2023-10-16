@@ -6,34 +6,12 @@ let matchingItem;
 
 if(bag){
     bag.forEach((bagItem) => {
-
-        products.forEach((product) =>{
-            if (bagItem.productId === product.id){
-                matchingItem = product;  
-            }
-        })
-
-        if(matchingItem.filterType == 'Accessories'){
+    products.forEach((product) =>{
+        if (bagItem.productId == product.id){
+            matchingItem = product;
+            
             bagHTML += `
-            <div class="product-preview js-product-preview">
-                <img class="product-image" src="${matchingItem.image}">
-                <p class="product-name">
-                    ${matchingItem.name}
-                </p>
-                <p class="product-price">
-                    &#x20AC; ${(matchingItem.priceInCents /100).toFixed(2)}
-                </p>                
-                <p class="product-quantity">
-                    QUANTITY: ${bagItem.quantity}
-                </p>
-                <button class="delete-button js-delete-button" data-this-product-size="${bagItem.size}" data-this-product-id="${matchingItem.id}">
-                    REMOVE
-                </button>        
-            </div>            
-        `;
-        }else{
-            bagHTML += `
-            <div class="product-preview js-product-preview">
+        <div class="product-preview js-product-preview">
                 <img class="product-image" src="${matchingItem.image}">
                 <p class="product-name">
                     ${matchingItem.name}
@@ -52,7 +30,8 @@ if(bag){
                 </button>        
             </div>            
         `;
-        }           
+        }
+    })                  
     });
 }
 
@@ -82,3 +61,5 @@ document.querySelectorAll('.js-delete-button').forEach((button) => {
         window. open("bag.html", "_self");  
     });
 });
+
+console.log(bag)

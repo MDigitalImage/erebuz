@@ -3,7 +3,7 @@ export const products = [
 {
     id : 0,
     image : 'pics/front1.png',
-    image2: 'pics/back1.png',
+    image2 : 'pics/back1.png',
     name : 'Black Shirt 1',
     priceInCents :  10000,  
     filterType : 'All',
@@ -13,10 +13,10 @@ export const products = [
 {
     id : 1,
     image : 'pics/front2.png',
-    image2: 'pics/back2.png',
+    image2 : 'pics/back2.png',
     name : 'Black Shirt 2',
     priceInCents :  20000,
-    filterType : 'Mens',
+    filterType : 'All',
     availability : 'true'
 }
 ];

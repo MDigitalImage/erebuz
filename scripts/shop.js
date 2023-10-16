@@ -57,11 +57,30 @@ document.querySelectorAll('.js-product-preview').forEach((product) => {
     })
 })
 
+let isSelected = false; 
+
 document.querySelectorAll('.js-filters-sort-icon').forEach((icon) => {
     icon.addEventListener('click', () =>{
-              
+        if(isSelected){
+            document.querySelectorAll('.header2').forEach((item) => {
+                item.style.display = "none";
+                isSelected = false;
+            })    
+        }
+        else{
+            document.querySelectorAll('.header2').forEach((item) =>{
+                item.style.display = "block";
+                isSelected = true;
+            }) 
+        }            
     })
 })
+
+const bottomElement =  document.querySelector(".bottom");
+
+document.querySelector('.js-header-filter-typeC').addEventListener('click', () =>{
+    bottomElement.scrollIntoView({ behavior: "smooth", block: "start", inline: "nearest" });  
+});
 
 document.querySelectorAll('.js-filter-type').forEach((filterType) => {
     filterType.addEventListener('click', () =>{

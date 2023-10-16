@@ -8,8 +8,11 @@ const lastProduct = products[lastProductId];
 let productHTML = ''; 
 
 productHTML = `
-    <div class="product-preview">        
-        <img class="product-image" src="${lastProduct.image}"> 
+    <div class="product-preview">
+        <div class= image-div>   
+            <img class="product-image" src="${lastProduct.image}"> 
+            <img class="product-image" src="${lastProduct.image2}">
+        </div>
         <p class="product-name">
                 ${lastProduct.name}
         </p>             

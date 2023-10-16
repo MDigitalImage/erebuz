@@ -102,7 +102,7 @@ body{
 .product-price{
     font-size: small;
     color: white;
-    text-align: start;
+    text-align: center;
     margin: 3px;
     margin-right: 0;
     cursor: pointer;    
@@ -128,14 +128,14 @@ body{
 .filtersort{
     display: none;
     min-width: 120px;
-    margin-left: 30px;
+    align-items: center;
 }
 
 .filtersorticon{
     height: 45px;
     cursor: pointer;
     display: block;
-    margin: 36px;
+    margin: auto;
     margin-top: 114px;
     margin-bottom: 0px;    
 }
@@ -217,6 +217,12 @@ body{
 
 .shop{
     padding-top: 90px;
+}
+
+.header2{
+    display: none;
+    text-align: center;
+    font-size: 30px;
 }
 
 @media only screen and (max-width:1300px) {
