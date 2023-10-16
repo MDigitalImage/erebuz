@@ -59,7 +59,7 @@ body{
 .products{
     display: grid;
     align-self: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;   
@@ -76,9 +76,10 @@ body{
 
 .product-preview{
     width: 345px;
+    height: 375px;
     display: inline-block;
     vertical-align: top;
-    margin: 3px; 
+    margin: 60px; 
     margin-bottom: 30px;
 }
 
@@ -241,7 +242,7 @@ body{
 @media only screen and (max-width:980px) {
 
     .home{
-        height: 90vh;
+        height: 60vh;
     }
 
     .next-div{
@@ -249,17 +250,18 @@ body{
     }
     
     .next-div-text{
-        font-size: 30px;        
-        margin: 30px;        
+        font-size: 33px;        
+        margin: 33px;        
     } 
 
     .backgroundimg{
         width: 100%;
         height: 20vh;
-        margin-top: 300px;
+        margin-top: 150px;
     }
 
     .product-preview{
+        height: auto;
         margin: auto;
         width: 705px;
         margin-bottom: 36px;

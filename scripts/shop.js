@@ -59,7 +59,7 @@ document.querySelectorAll('.js-product-preview').forEach((product) => {
 
 document.querySelectorAll('.js-filters-sort-icon').forEach((icon) => {
     icon.addEventListener('click', () =>{
-        window.open("phonefilters.html", "_self")      
+              
     })
 })
 

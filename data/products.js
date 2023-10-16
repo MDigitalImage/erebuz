@@ -2,8 +2,9 @@ export const products = [
 
 {
     id : 0,
-    image : 'pics/blackshirt.jpg',
-    name : 'Black Shirt',
+    image : 'pics/front1.png',
+    image2: 'pics/back1.png',
+    name : 'Black Shirt 1',
     priceInCents :  10000,  
     filterType : 'All',
     availability : 'true' 
@@ -11,32 +12,13 @@ export const products = [
 
 {
     id : 1,
-    image : 'pics/blackshirt.jpg',
-    name : 'Mens OG Black Shirt',
+    image : 'pics/front2.png',
+    image2: 'pics/back2.png',
+    name : 'Black Shirt 2',
     priceInCents :  20000,
     filterType : 'Mens',
     availability : 'true'
-},
-
-{
-    id : 2,
-    image : 'pics/blackshirt.jpg',
-    name : 'Womens Top',
-    priceInCents :  10000, 
-    filterType : 'Womens',
-    availability : 'true'   
-},
-
-{
-    id : 3,
-    image : 'pics/blackshirt.jpg',
-    name : 'Key Ring Accessorie',
-    priceInCents :  20000,
-    filterType : 'Accessories',
-    availability : 'true'
 }
-
-
 ];
 
 export function sortListById(){
