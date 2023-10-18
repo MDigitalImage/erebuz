@@ -12,23 +12,27 @@ if(bag){
             
             bagHTML += `
         <div class="product-preview js-product-preview">
-                <img class="product-image" src="${matchingItem.image}">
+            <img class="product-image" src="${matchingItem.image}">
+            <div>    
                 <p class="product-name">
                     ${matchingItem.name}
                 </p>
                 <p class="product-price">
                     &#x20AC; ${(matchingItem.priceInCents /100).toFixed(2)}
                 </p>
+            </div>
+            <div class="bag-bottom-div" >
                 <p class="product-size">
-                    SIZE: ${bagItem.size}
+                    SIZE:  <br>${bagItem.size}
                 </p>
                 <p class="product-quantity">
-                    QUANTITY: ${bagItem.quantity}
+                    QUANTITY:  <br>${bagItem.quantity}
                 </p>
                 <button class="delete-button js-delete-button" data-this-product-size="${bagItem.size}" data-this-product-id="${matchingItem.id}">
                     REMOVE
-                </button>        
-            </div>            
+                </button>
+            </div>  
+        </div>            
         `;
         }
     })                  
