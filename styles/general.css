@@ -52,7 +52,7 @@ body{
     display: flex;
     flex-direction: column;
     transform-style: preserve-3d;
-    z-index: -1;  
+    z-index: 0;  
     width: 100%;
 }
 
@@ -190,7 +190,7 @@ body{
     height: 100%;
     object-fit: cover;
     opacity: 0.9;
-    z-index: -1;
+    z-index: 0;
     transform: translateZ(-10px)scale(2);
 }
 
