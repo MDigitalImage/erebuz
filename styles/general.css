@@ -192,6 +192,7 @@ body{
     opacity: 0.9;
     z-index: 0;
     transform: translateZ(-10px)scale(2);
+    
 }
 
 .next-div{
@@ -301,7 +302,7 @@ body{
     }
 
     .phone{
-        display: block;
+        display: none;
     } 
 
     .product-preview{
