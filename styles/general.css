@@ -191,8 +191,11 @@ body{
     object-fit: cover;
     opacity: 0.9;
     z-index: 0;
-    transform: translateZ(-10px)scale(2);
-    
+    transform: translateZ(-10px)scale(2);    
+}
+
+.backgroundimg{
+    position: relative;
 }
 
 .next-div{
@@ -258,15 +261,17 @@ body{
     transition: all 1s;
 }
 
+
+.phone{
+    display: none;
+} 
+
 @media only screen and (max-width:1300px) {
     .products{
         grid-template-columns: 1fr 1fr ;
     }
 }
 
-.phone{
-    display: none;
-} 
 
 @media only screen and (max-width:980px) {
     .filterout{
