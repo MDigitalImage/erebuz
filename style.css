@@ -48,3 +48,12 @@ p{
     z-index: 100;
     background-size: 15%;
 }
+
+video {
+    pointer-events: none;
+}
+
+video::-webkit-media-controls-panel {
+    display: none;
+    opacity: 1;
+}
