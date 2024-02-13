@@ -31,10 +31,8 @@
         var loader = document.getElementById("loader");
         var video = document.getElementById("video");
         
-        video.addEventListener('canplaythrough', () => {
-            if (video.readyState === 4 ){
-                loader.style.display="none";
-            }
+        video.addEventListener('canplaythrough', () => {           
+            loader.style.display="none";
         })
         
     </script>
