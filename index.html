@@ -31,9 +31,13 @@
         var loader = document.getElementById("loader");
         var video = document.getElementById("video");
         
-        video.addEventListener('canplaythrough', () => {           
+        //video.addEventListener('canplaythrough', () => {           
+        //    loader.style.display="none";
+        //})
+
+        video.oncanplaythrough = function() {
             loader.style.display="none";
-        })
+        }
         
     </script>
 </body>
