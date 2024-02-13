@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div id="loader">
+
+    </div>
     <img class="logo" src="logo.png">
     <p style="margin-top: 36px; font-weight: bold; font-size: 24px;">
         The Awakening Of The Gods
@@ -24,5 +27,11 @@
     <p style="margin-top: 30px; font-weight: bold; font-size: 27px;">
         Erebuz Legacy.
     </p>
+    <script>
+        var loader = document.getElementById("loader")
+        window.addEventListener("load", function(){
+            loader.style.display="none";
+        })
+    </script>
 </body>
 </html>
