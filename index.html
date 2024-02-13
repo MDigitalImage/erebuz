@@ -36,7 +36,9 @@
         //})
 
         video.oncanplaythrough = function() {
-            loader.style.display="none";
+            loader.style.display="none";            
+            video.setAttribute("autoplay","autoplay");
+            video.play();
         }
         
     </script>
