@@ -15,8 +15,8 @@
     <p style="margin-top: 36px; font-weight: bold; font-size: 24px;">
         The Awakening Of The Gods
     </p>
-    <div class="video" id="video">
-        <video muted autoplay loop plays-inline playsinline>
+    <div class="video">
+        <video id="video" muted autoplay loop plays-inline playsinline>
             <source src="My VideoC.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
@@ -28,14 +28,15 @@
         Erebuz Legacy.
     </p>
     <script>
-        var loader = document.getElementById("loader")
-        var video = document.getElementById("video")
-        window.addEventListener("load", function(){
-            //loader.style.display="none";
+        var loader = document.getElementById("loader");
+        var video = document.getElementById("video");
+        
+        video.addEventListener('loadeddata', () => {
+            if (video.readyState === 4 ){
+                loader.style.display="none";
+            }
         })
-        video.addEventListener('loadeddata', function() {
-            loader.style.display="none";
-        })
+        
     </script>
 </body>
 </html>
