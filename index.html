@@ -15,9 +15,9 @@
     <p style="margin-top: 36px; font-weight: bold; font-size: 24px;">
         The Awakening Of The Gods
     </p>
-    <div class="video">
+    <div class="video" id="video">
         <video muted autoplay loop plays-inline playsinline>
-            <source src="My Video.mp4" type="video/mp4">
+            <source src="My VideoC.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
     </div>    
@@ -29,7 +29,11 @@
     </p>
     <script>
         var loader = document.getElementById("loader")
+        var video = document.getElementById("video")
         window.addEventListener("load", function(){
+            //loader.style.display="none";
+        })
+        video.addEventListener('loadeddata', function() {
             loader.style.display="none";
         })
     </script>
