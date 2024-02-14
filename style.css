@@ -1,6 +1,8 @@
 body{
-    background-color: black;
+    background-color: rgb(42, 42, 42);
     margin: 0;
+    background-image: url(greektexture.jpg);
+    background-blend-mode: multiply;
 }
 
 img{
@@ -14,10 +16,11 @@ img{
     width: 90px;
 }
 
-.video{
-    width: 100%;
-    display: flex;
-    width: 100%;
+.video{ 
+    margin: auto;
+    display: block;
+    width: 300px;
+    box-shadow: 0px 15px 100px 35px rgba(0,0,0,1); 
 }
 
 video{
@@ -28,11 +31,13 @@ video{
     overflow: hidden;
     display: block;
     margin: auto;
-}
+    }
 
 p{
-    text-align: center;
-    color: white;
+    text-align: center;    
+    background-image: url(silver.jpg);
+    background-clip: text;
+    color: transparent;
     text-shadow: 0px 0px 5px rgba(200, 200, 200, 0.7);
     font-size: 18px;
     margin: 15px;
