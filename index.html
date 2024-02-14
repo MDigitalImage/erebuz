@@ -33,14 +33,10 @@
         
         video.addEventListener('canplaythrough', () => {           
             loader.style.display="none";
-            video.setAttribute("autoplay","autoplay");
-            video.play();
         })
 
         video.oncanplaythrough = function() {
-            loader.style.display="none";            
-            video.setAttribute("autoplay","autoplay");
-            video.play();
+            loader.style.display="none";
         }
         
     </script>
